@@ -1,0 +1,35 @@
+name: porto_track
+description: >-
+  PortoTrack — MVP mobile para acompanhamento do ciclo operacional de cargas e
+  contêineres em terminal portuário (Operações Portuárias e Comércio Exterior).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+  flutter: '>=3.35.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Gerenciamento de estado
+  provider: ^6.1.2
+  # Persistência remota (Auth + Postgres + Storage)
+  supabase_flutter: ^2.8.0
+  # Integração com API de terceiros (BrasilAPI)
+  http: ^1.2.2
+  # Seleção de arquivos para upload de documentos
+  file_picker: ^10.0.0
+  # Abrir documentos (URL assinada do Storage)
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
